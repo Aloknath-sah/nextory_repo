@@ -1,0 +1,39 @@
+.cont {
+    height: 100px;
+}
+
+.table_cont {
+    height: 190px;
+}
+
+.add{
+    width: 150px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .cont {
+        height: 300px;
+    }
+
+    .table_cont {
+        height: 290px;
+    }
+
+    .add{
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .cont {
+        height: 100px;
+    }
+
+    .table_cont {
+        height: 190px;
+    }
+
+    .add{
+        width: 150px;
+    }
+}
