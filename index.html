@@ -13,8 +13,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="m-5">
-    <div class="container-fluid">
+  <body class="m-sm-0 m-md-0 m-lg-4">
+    <div class="">
       <form>
         <!-- first section of form -->
         <div
@@ -28,7 +28,7 @@
             Add product
           </div>
           <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-2">
+            <div class="col-sm-6 col-md-4 col-lg-2">
               <div class="px-2">
                 <div>Reason</div>
                 <select id="reason">
@@ -37,19 +37,19 @@
                 </select>
               </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2 px-4">
+            <div class="col-sm-6 col-md-4 col-lg-2 px-4">
               <div>No</div>
               <input id="no" type="text" style="width: 50px" />
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2 px-4">
+            <div class="col-sm-6 col-md-4 col-lg-2 px-4">
               <div>Name</div>
               <input id="name" type="text" style="width: 120px" />
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2 px-4">
+            <div class="col-sm-6 col-md-4 col-lg-2 px-4">
               <div>Price</div>
               <input id="price" type="text" style="width: 50px" />
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-2 px-4">
+            <div class="col-sm-6 col-md-4 col-lg-2 px-4">
               <div>Qty</div>
               <input id="qty" type="text" style="width: 50px" />
             </div>
@@ -82,7 +82,7 @@
                 </tr>
               </thead>
               <tbody id="tbody">
-                <tr class="border border-dark">
+                <tr class="border border-dark del1">
                   <th class="border border-dark" scope="row">1</th>
                   <td class="border border-dark">arzoo khan</td>
                   <td class="border border-dark">129.00</td>
@@ -92,7 +92,7 @@
                   <td class="border border-dark">0</td>
                   <td class="border border-dark">DEF</td>
                   <td class="border border-dark">www</td>
-                  <td class="border border-dark">delete</td>
+                  <td><button class="border border-dark" onclick="func()" >delete</button></td>
                 </tr>
               </tbody>
             </table>
