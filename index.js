@@ -13,7 +13,7 @@ handleAdd = (e) => {
 
     var tbody = document.getElementById("tbody")
     var tr = document.createElement("tr")
-    tr.className = "border border-dark"
+    tr.className = "border border-dark del1"
     var no1 = document.createElement("td")
     no1.textContent = no
     no1.className = "border border-dark"
@@ -59,11 +59,12 @@ handleAdd = (e) => {
     bunt.className = "border border-dark"
     tr.append(bunt)
 
-    var delete1 = document.createElement("td")
+    var delete1 = document.createElement("button")
     delete1.textContent = "delete"
     delete1.className = "border border-dark"
     tr.append(delete1)
     tbody.append(tr)
+    delete1.setAttribute('onclick', "func()");
 
     //logic for 2nd box in the form
     var no2_val = document.getElementById("no2").value
@@ -73,7 +74,7 @@ handleAdd = (e) => {
 
     var tbody2 = document.getElementById("tbody2")
     var tr = document.createElement("tr")
-    tr.className = "border border-dark"
+    tr.className = "border border-dark del2"
     var no2 = document.createElement("td")
     no2.textContent = no2_val
     no2.className = "border border-dark"
@@ -114,11 +115,12 @@ handleAdd = (e) => {
     bunt2.className = "border border-dark"
     tr.append(bunt2)
 
-    var delete2 = document.createElement("td")
+    var delete2 = document.createElement("button")
     delete2.textContent = "delete"
     delete2.className = "border border-dark"
     tr.append(delete2)
     tbody2.append(tr)
+    delete2.setAttribute('onclick', "func1()");
 
     //logic for 3rd box in the form
     var no3_val = document.getElementById("no3").value
@@ -128,7 +130,7 @@ handleAdd = (e) => {
 
     var tbody3 = document.getElementById("tbody3")
     var tr = document.createElement("tr")
-    tr.className = "border border-dark"
+    tr.className = "border border-dark del3"
     var no3 = document.createElement("td")
     no3.textContent = no3_val
     no3.className = "border border-dark"
@@ -169,10 +171,23 @@ handleAdd = (e) => {
     bunt3.className = "border border-dark"
     tr.append(bunt3)
 
-    var delete3 = document.createElement("td")
+    var delete3 = document.createElement("button")
     delete3.textContent = "delete"
     delete3.className = "border border-dark"
     tr.append(delete3)
     tbody3.append(tr)
+    delete3.setAttribute('onclick', "func2()");
 
+}
+
+func = () => {
+    document.getElementsByClassName("del1").remove()
+}
+
+func1 = () => {
+    document.getElementsByClassName("del2").remove()
+}
+
+func2 = () => {
+    document.getElementsByClassName("del3").remove()
 }
